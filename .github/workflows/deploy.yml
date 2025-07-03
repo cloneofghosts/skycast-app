@@ -16,22 +16,21 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Use Node.js version 18 (or a version compatible with your React app)
-          # cache: 'npm' # Removed caching to ensure a fresh install and lock file generation if missing
+          node-version: '24'
+          # No caching here, as npm install --force handles clean installs
 
-      - name: Clean npm cache (optional, for debugging stubborn issues)
-        run: npm cache clean --force
+      - name: Install dependencies (using npm install --force for robustness)
+        # This will generate package-lock.json if it doesn't exist and
+        # aggressively resolve dependencies, which can help with 'module not found' errors.
+        run: npm install --force
 
-      - name: Install dependencies # Step 3: Install project dependencies
-        run: npm install --legacy-peer-deps # Use --legacy-peer-deps for broader compatibility
-
-      - name: Build React application # Step 4: Build the React application for production
+      - name: Build React application
         run: npm run build
 
-      - name: Deploy to GitHub Pages # Step 5: Deploy the built application to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3 # Use the peaceiris/actions-gh-pages action
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub Token for authentication
-          publish_dir: ./build # The directory containing your built static files
-          publish_branch: gh-pages # The branch to publish to (GitHub Pages default)
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
           # cname: example.com # Uncomment and replace with your custom domain if you have one
