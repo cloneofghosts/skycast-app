@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Sun, Moon, CloudSun, CloudMoon, Cloud, CloudFog, Wind, CloudRain, CloudSnow, Snowflake, CloudHail, CloudLightning, HelpCircle, Thermometer, Droplet, Gauge, Eye, ThermometerSun, ThermometerSnowflake } from 'lucide-react'; // Import Lucide icons
+import { Sun, Moon, CloudSun, CloudMoon, Cloud, CloudFog, Wind, CloudRain, CloudSnow, Snowflake, CloudHail, CloudLightning, HelpCircle, Thermometer, Droplet, Gauge, Eye, ThermometerSun } from 'lucide-react'; // Import Lucide icons
 
 // Function to find the weather data for the current hour
 const getCurrentHourWeather = (hourlyData) => {
