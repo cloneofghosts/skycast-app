@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/skycast-app/static/css/main.1e7c3342.css",
+    "main.js": "/skycast-app/static/js/main.baddd4ad.js",
+    "static/js/453.43a1218f.chunk.js": "/skycast-app/static/js/453.43a1218f.chunk.js",
+    "index.html": "/skycast-app/index.html",
+    "main.1e7c3342.css.map": "/skycast-app/static/css/main.1e7c3342.css.map",
+    "main.baddd4ad.js.map": "/skycast-app/static/js/main.baddd4ad.js.map",
+    "453.43a1218f.chunk.js.map": "/skycast-app/static/js/453.43a1218f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e7c3342.css",
+    "static/js/main.baddd4ad.js"
+  ]
+}
