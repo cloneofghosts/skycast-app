@@ -10,17 +10,20 @@ jobs:
     runs-on: ubuntu-latest # Use a fresh Ubuntu environment for each job
 
     steps:
-      - name: Checkout repository # Step 1: Checkout the repository code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js # Step 2: Set up Node.js environment
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18' # Use Node.js version 18 (or a version compatible with your React app)
-          cache: 'npm' # Cache npm dependencies for faster builds
+          # cache: 'npm' # Removed caching to ensure a fresh install and lock file generation if missing
+
+      - name: Clean npm cache (optional, for debugging stubborn issues)
+        run: npm cache clean --force
 
       - name: Install dependencies # Step 3: Install project dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps # Use --legacy-peer-deps for broader compatibility
 
       - name: Build React application # Step 4: Build the React application for production
         run: npm run build
