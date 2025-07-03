@@ -8,6 +8,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Use a fresh Ubuntu environment for each job
+    permissions:
+      contents: write # <--- ADD THIS LINE: Grant write permission to the GITHUB_TOKEN
 
     steps:
       - name: Checkout repository
