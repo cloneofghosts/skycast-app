@@ -1,0 +1,31 @@
+name: CI Build Check
+
+on:
+  pull_request:
+    branches:
+      - main # Trigger this workflow for pull requests targeting the main branch
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest # Use a fresh Ubuntu environment for each job
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Ensure this matches the Node.js version used in your deploy workflow
+          cache: 'npm' # Cache npm dependencies to speed up subsequent runs
+
+      - name: Install dependencies
+        # This will generate package-lock.json if it doesn't exist and
+        # aggressively resolve dependencies, which can help with 'module not found' errors.
+        run: npm install --force
+
+      - name: Run build command
+        # This step attempts to build the React application.
+        # If there are any build errors (e.g., due to dependency incompatibilities),
+        # this step will fail, and thus the entire workflow will fail.
+        run: npm run build
