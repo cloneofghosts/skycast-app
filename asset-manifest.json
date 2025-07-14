@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/skycast-app/static/css/main.446fbabd.css",
-    "main.js": "/skycast-app/static/js/main.26a6cc6d.js",
-    "static/js/453.43a1218f.chunk.js": "/skycast-app/static/js/453.43a1218f.chunk.js",
+    "main.css": "/skycast-app/static/css/main.f5dfa592.css",
+    "main.js": "/skycast-app/static/js/main.a7bd1527.js",
+    "static/js/488.b4486197.chunk.js": "/skycast-app/static/js/488.b4486197.chunk.js",
     "index.html": "/skycast-app/index.html",
-    "main.446fbabd.css.map": "/skycast-app/static/css/main.446fbabd.css.map",
-    "main.26a6cc6d.js.map": "/skycast-app/static/js/main.26a6cc6d.js.map",
-    "453.43a1218f.chunk.js.map": "/skycast-app/static/js/453.43a1218f.chunk.js.map"
+    "main.f5dfa592.css.map": "/skycast-app/static/css/main.f5dfa592.css.map",
+    "main.a7bd1527.js.map": "/skycast-app/static/js/main.a7bd1527.js.map",
+    "488.b4486197.chunk.js.map": "/skycast-app/static/js/488.b4486197.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.446fbabd.css",
-    "static/js/main.26a6cc6d.js"
+    "static/css/main.f5dfa592.css",
+    "static/js/main.a7bd1527.js"
   ]
 }
