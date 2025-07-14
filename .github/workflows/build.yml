@@ -17,7 +17,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24' # Ensure this matches the Node.js version used in your deploy workflow
-          cache: 'npm' # Cache npm dependencies to speed up subsequent runs
 
       - name: Install dependencies
         # This will generate package-lock.json if it doesn't exist and
