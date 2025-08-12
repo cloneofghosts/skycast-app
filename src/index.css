@@ -1,6 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@source "./src/**/*.{js,jsx,ts,tsx}";
+@source "./index.html";
 
 /* You can add any global custom CSS here if needed */
 body {
