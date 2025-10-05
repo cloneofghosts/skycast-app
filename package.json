@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.13",
-    "@vitejs/plugin-react": "^5.0.3",
+    "@vitejs/plugin-react": "^5.0.4",
     "autoprefixer": "^10.4.21",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
