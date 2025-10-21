@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Set up Node.js
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: '24' # Ensure this matches the Node.js version used in your deploy workflow
 
