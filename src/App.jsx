@@ -1019,6 +1019,13 @@ const App = () => {
                         </div>
                     </div>
                 )}
+
+                {/* Data Source Attribution */}
+                <div className="mt-6 pt-4 border-t border-gray-300 text-center">
+                    <p className="text-xs text-gray-600">
+                        Data from <a href="https://brightsky.dev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Bright Sky</a> • Geocoding by <a href="https://nominatim.org" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Nominatim</a>
+                    </p>
+                </div>
             </div>
         </div>
     );
