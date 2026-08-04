@@ -12,19 +12,19 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "lucide-react": "^1.27.0",
+    "lucide-react": "^1.28.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "web-vitals": "^6.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
-    "@vitejs/plugin-react": "^6.0.4",
+    "@vitejs/plugin-react": "^6.0.5",
     "autoprefixer": "^10.5.4",
     "gh-pages": "^6.3.0",
-    "postcss": "^8.5.23",
+    "postcss": "^8.5.25",
     "tailwindcss": "^4.1.11",
-    "vite": "^8.1.5"
+    "vite": "^8.2.0"
   },
   "browserslist": {
     "production": [
